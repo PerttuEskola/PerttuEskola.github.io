@@ -1,0 +1,16 @@
+grid-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+.logo { grid-area: g1; }
+.otsikko1 { grid-area: g2; }
+.teksti1 { grid-area: g3; }
+.sidebar { grid-area: g4;}
+
+#paasivu {
+    grid-template-areas:
+     'g1 g1 g1'
+     'g4 g2 g2 '
+     'g4 g3 g3';
+}
