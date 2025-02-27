@@ -7,12 +7,14 @@
 .otsikko1 { grid-area: g2; }
 .teksti1 { grid-area: g3; }
 .sidebar { grid-area: g4;}
+.kuvake { grid-area: g5;}
 
 #paasivu {
     grid-template-areas:
      'g1 g1 g1 g1'
      'g4 g2 g2 g2'
-     'g4 g3 g3 g3';
+     'g4 g3 g3 g3'
+     'g4 g5 g5 g5';
 }
 
 body {
@@ -33,3 +35,5 @@ font-weight: bold;
 .teksti1 {font-size: 25px;
 margin: 0%; margin: 0% 6.3%;
 }
+.kuvake { 
+    margin: 0%; margin: 0% 6.3%}
