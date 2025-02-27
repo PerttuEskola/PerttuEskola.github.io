@@ -10,7 +10,7 @@
 
 #paasivu {
     grid-template-areas:
-     'g1 g1 g1'
-     'g4 g2 g2 '
-     'g4 g3 g3';
+     'g1 g1 g1 g1'
+     'g4 g2 g2 g2'
+     'g4 g3 g3 g3';
 }
