@@ -8,13 +8,15 @@
 .teksti1 { grid-area: g3; }
 .sidebar { grid-area: g4;}
 .kuvake { grid-area: g5;}
+.kuvateksti1 {grid-area: g6;}
 
 #paasivu {
     grid-template-areas:
      'g1 g1 g1 g1'
      'g4 g2 g2 g2'
      'g4 g3 g3 g3'
-     'g4 g5 g5 g5';
+     'g4 g5 g5 g5'
+     'g4 g6 g6 g6';
 }
 
 body {
@@ -23,17 +25,30 @@ body {
     font-family: Arial;
     margin: 40px 20px;
 }
-h1 { font-weight:normal; } 
-h1 { margin: 0; margin: 2.6% -1.4%;
+h1 { 
+    font-weight:normal; 
+    margin: 0; margin: 2.6% -1.4%;
     font-size: 45px;
-}
-.sidebar {font-size: 30px;
-font-weight: bold;
-}
-.logo {margin: 0; margin: 0% -2.6%}
+} 
 
-.teksti1 {font-size: 25px;
-margin: 0%; margin: 0% 6.3%;
+.sidebar {
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo {
+    margin: 0; margin: 0% -2.6%
+}
+
+.teksti1 {
+    font-size: 25px;
+    margin: 0%; margin: 0% 6.3%;
 }
 .kuvake { 
-    margin: 0%; margin: 0% 6.3%}
+    margin: 0%; margin: 0% 6.3%
+}
+
+.kuvateksti1 {
+    color: white;
+    background: black;
+    margin: 0%; margin: 0% 6.3%;
+}
