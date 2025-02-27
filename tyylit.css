@@ -14,3 +14,10 @@
      'g4 g2 g2 g2'
      'g4 g3 g3 g3';
 }
+
+body {
+    color:black;
+    background-color: rgba(243, 243, 243);
+    font-family: Arial;
+    margin: 40px 20px;
+}
