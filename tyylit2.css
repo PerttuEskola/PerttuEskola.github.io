@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(texture.jpg);
+    background-position: center;
+    background-size: cover;
+}
