@@ -31,5 +31,16 @@ body {
 }
 .alatekstit {
     padding: 150px;
-    margin-left: 50px;
+    margin-left: -150px;
+    margin-top: 140px;
+}
+.grid-container {
+    display: grid;
+    gap: 20px;
+    }
+
+
+.kuvakecss {
+    padding: 20px;
+    margin-left: 20px
 }
