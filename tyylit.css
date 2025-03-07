@@ -1,59 +1,20 @@
-.grid-container {
-    display: grid;
-    gap: 20px;
-    padding: 20px;
-}
-.logo { grid-area: g1; }
-.otsikko1 { grid-area: g2; }
-.teksti1 { grid-area: g3; }
-.sidebar { grid-area: g4;}
-.kuvake { grid-area: g5;}
-.kuvateksti1 {grid-area: g6;}
-
-#paasivu {
-    grid-template-areas:
-     'g1 g1 g1 g1'
-     'g4 g2 g2 g2'
-     'g4 g3 g3 g3'
-     'g4 g5 g5 g5'
-     'g4 g6 g6 g6';
-}
-
 body {
     color:rgb(0, 0, 0);
     background-color: rgba(243, 243, 243);
     font-family: Arial;
     margin: 40px 20px;
-}
-h1 { 
+  }
+  h1 { 
     font-weight:normal; 
     margin: 0; margin: 2.6% -1.4%;
     font-size: 45px;
 } 
-
-.sidebar a {
-    font-size: 30px;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    height: 100%;
-    width: 0;
-
-}
-
-.sidebar a:hover {
-    color: blueviolet;
-}
-.logo {
-    margin: 0; margin: 0% -2.6%
-}
-
 .teksti1 {
     font-size: 25px;
     margin: 0%; margin: 0% 6.3%;
 }
 .kuvake { 
-    margin: 0%; margin: 0% 6.3%
+    margin: 0%; margin: 0% 6.3%;
 }
 
 .kuvateksti1 {
@@ -63,3 +24,54 @@ h1 {
     font-style: italic;
     width: 572px;
 }
+
+  .sidebar {
+      margin: 0;
+      padding: 0;
+      padding-top: 0;
+      width: 200px;
+      background-color:#333;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+  
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 16px;
+      text-decoration: none;
+    }
+  
+    .sidebar a.active {
+      background-color: blueviolet;
+      color: white;
+    }
+  
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+    
+    div.content {
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+  
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+    
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
