@@ -1,45 +1,55 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    background-color: rgba(243, 243, 243);
-
+  color:rgb(0, 0, 0);
+  background-color: rgba(243, 243, 243);
+  font-family: Arial;
+  margin: 40px 20px;
 }
 .sidebar {
-    width: 250px;
-    height: 100vh;
-    background : #333;
-    color: white;
-    padding-top: 150px;
-}
-.sidebar a {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:#333;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .sidebar a {
     display: block;
-    padding: 20px;
     color: white;
+    padding: 16px;
     text-decoration: none;
-}
-.Otsikko {
-    margin-left: 50px;
-    padding: 20px;
-    padding-top: 140px;
-}
-.image {
-    margin-left: -615px;
-    margin-top: 50px;
-}
-.alatekstit {
-    padding: 150px;
-    margin-left: -150px;
-    margin-top: 140px;
-}
-.grid-container {
-    display: grid;
-    gap: 20px;
+  }
+
+  .sidebar a.active {
+    background-color: blueviolet;
+    color: white;
+  }
+
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
     }
-
-
-.kuvakecss {
-    padding: 20px;
-    margin-left: 20px;
-}
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
