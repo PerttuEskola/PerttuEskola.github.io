@@ -13,6 +13,9 @@ body {
     font-size: 25px;
     margin: 0%; margin: 0% 6.3%;
 }
+.imagelogo {
+    position:relative
+}
 .kuvake { 
     margin: 0%; margin: 0% 6.3%;
 }
@@ -31,7 +34,7 @@ body {
       padding-top: 0;
       width: 200px;
       background-color:#333;
-      position: fixed;
+      position: absolute;
       height: 100%;
       overflow: auto;
     }
