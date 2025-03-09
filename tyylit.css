@@ -4,11 +4,7 @@ body {
     font-family: Arial;
     margin: 60px 20px;
   }
-  h1 { 
-    font-weight:normal; 
-    margin: 0; margin: 2.6% -1.4%;
-    font-size: 45px;
-} 
+
 .teksti1 {
     font-size: 25px;
     margin: 0%; margin: 0% 6.3%;
@@ -59,7 +55,7 @@ body {
     
     div.content {
       margin-left: 200px;
-      padding: 1px 16px;
+      padding: 16px 100px;
       height: 1000px;
     }
     .footer {
@@ -79,7 +75,10 @@ body {
         position: relative;
       }
       .sidebar a {float: left;}
-      div.content {margin-left: 0;}
+      div.content {
+        padding: 1px 16px;
+        margin-left: 0;
+      }
       .imagelogo {
         top: 0;
         position:relative
