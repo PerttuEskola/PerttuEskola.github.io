@@ -13,7 +13,9 @@ body {
     height: 100%;
     overflow: auto;
   }
-
+  .imagelogo {
+    position:relative
+}
   .sidebar a {
     display: block;
     color: white;

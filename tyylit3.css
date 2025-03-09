@@ -7,13 +7,15 @@ body {
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 280px;
+    width: 200px;
     background-color:#333;
     position: fixed;
     height: 100%;
     overflow: auto;
   }
-
+  .imagelogo {
+    position:relative
+}
   .sidebar a {
     display: block;
     color: white;
@@ -33,7 +35,7 @@ body {
   
   div.content {
     margin-left: 200px;
-    padding: 1.5px 100px;
+    padding: 1px 100px;
     height: 1000px;
   }
 
