@@ -37,7 +37,7 @@ body {
   div.content {
     margin-left: 200px;
     padding: 16px 100px;
-    height: 1000px;
+    height: 100%;
   }
   .footer {
     left: 3.5%;   
@@ -49,13 +49,10 @@ body {
     text-align: center;
     position: fixed;
   }
-
   .mainokset {
-    margin-left: 55%;
-    margin-top: 9.5%;
+    margin-top: 9%;
     position: fixed;
-    top: 0;
-    }
+  }
   @media screen and (max-width: 700px) {
     .sidebar {
       width: 100%;
@@ -72,6 +69,12 @@ body {
     .imagelogo {
       top: 0;
       position:relative
+    }
+    .mainokset {
+      width: 100%;
+      height: 100%;
+      margin-top: 9%;
+      position: relative;
     }
     .footer {
       left: 0;
