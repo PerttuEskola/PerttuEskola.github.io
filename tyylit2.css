@@ -2,7 +2,7 @@ body {
   color:rgb(0, 0, 0);
   background-color: rgba(243, 243, 243);
   font-family: Arial;
-  margin: 40px 20px;
+  margin: 60px 20px;
 }
 .sidebar {
     margin: 0;
@@ -14,7 +14,8 @@ body {
     overflow: auto;
   }
   .imagelogo {
-    position:relative
+    top: 0;
+    position:fixed
 }
   .sidebar a {
     display: block;
@@ -36,9 +37,18 @@ body {
   div.content {
     margin-left: 200px;
     padding: 1px 16px;
-    height: 1000px;
+    height: 1300px;
   }
-
+  .footer {
+    left: 3.5%;   
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+    background-color:#333;
+    color: white;
+    text-align: center;
+    position: fixed;
+  }
   @media screen and (max-width: 700px) {
     .sidebar {
       width: 100%;
@@ -47,6 +57,23 @@ body {
     }
     .sidebar a {float: left;}
     div.content {margin-left: 0;}
+    .imagelogo {
+      top: 0;
+      position:relative
+  }
+  .imagelogo {
+    top: 0;
+    position:relative
+  }
+  .footer {
+    bottom: 0;
+    left: 0;
+    padding: 1px 0px;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
   }
   
   @media screen and (max-width: 400px) {
