@@ -38,17 +38,17 @@ body {
   div.content {
     margin-left: 200px;
     padding: 16px 100px;
-    height: 1300px;
+    height: 1000px;
   }
   .content img{
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
   }
   .footer {
     left: 3.5%;   
     bottom: 0;
     width: 100%;
-    height: 8%;
+    height: 10%;
     background-color:#333;
     color: white;
     text-align: center;
@@ -69,9 +69,9 @@ body {
       top: 0;
       position:relative
   }
-  .imagelogo {
-    top: 0;
-    position:relative
+  .content img{
+    width: 100%;
+    height: 100%;
   }
   .footer {
     bottom: 0;
